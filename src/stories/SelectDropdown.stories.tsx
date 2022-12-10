@@ -4,8 +4,18 @@ import SelectDropdown from "../components/SelectDropdown/SelectDropdown";
 export default {
   title: "Select Dropdown",
   component: SelectDropdown,
-  parameters: {
+  args: {
     layout: "fullscreen",
+    variant: "filled",
+    placeholder: "Select",
+    selected: "0",
+    options: [
+      {
+        selectLabel: "select 0",
+        dropdownLabel: "select 0",
+        value: "0",
+      },
+    ],
   },
 } as ComponentMeta<typeof SelectDropdown>;
 
